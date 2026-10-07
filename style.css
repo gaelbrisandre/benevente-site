@@ -649,30 +649,59 @@ details p {
    FOOTER
    ========================================================= */
 
-footer {
-    background: var(--navy-dark);
+.footer {
+    background: var(--navy);
     color: white;
-    padding: 45px 0;
+    padding: 55px 0 25px;
 }
 
-.footer-content {
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.footer-brand img {
+    display: block;
+    width: 170px;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--coral);
+}
+
+.footer-bottom {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+    gap: 20px;
+    margin-top: 45px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 11px;
 }
-
-.footer-content strong {
-    font-size: 20px;
-}
-
-.footer-content p,
-.footer-content span {
-    color: #94a3b8;
-    font-size: 12px;
-    margin-top: 4px;
-}
-
 
 /* =========================================================
    RESPONSIVE
