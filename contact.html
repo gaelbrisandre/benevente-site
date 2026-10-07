@@ -33,45 +33,125 @@
       border-radius: 18px;
       padding: 40px;
       background: #fff;
+      text-align: left;
+      box-shadow: 0 20px 50px rgba(11, 48, 78, 0.08);
     }
 
     .contact-card h2 {
       color: #0d3b5f;
       margin-top: 0;
       margin-bottom: 12px;
+      text-align: center;
     }
 
-    .contact-card p {
+    .contact-card > p {
       color: #667085;
       line-height: 1.7;
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .contact-email {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 14px 24px;
-      background: #ff574f;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group label {
+      color: #0d3b5f;
+      font-size: 14px;
       font-weight: 700;
     }
 
-    .contact-email:hover {
-      opacity: 0.9;
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d8e0e8;
+      border-radius: 10px;
+      background: #fff;
+      color: #172033;
+      font-family: inherit;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #f5564d;
+      box-shadow: 0 0 0 3px rgba(245, 86, 77, 0.12);
+    }
+
+    .contact-privacy {
+      margin: 0;
+      color: #667085;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .contact-submit {
+      width: 100%;
+      border: none;
+      padding: 14px 22px;
+      background: #f5564d;
+      color: white;
+      border-radius: 10px;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.2s ease;
+      box-shadow: 0 8px 20px rgba(245, 86, 77, 0.20);
+    }
+
+    .contact-submit:hover {
+      background: #df403f;
+      transform: translateY(-1px);
     }
 
     .back-home {
-    display: inline-block;
-    margin-top: 40px;
-    color: #ff554d;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  .back-home:hover {
-    text-decoration: underline;
-  }
+      display: inline-block;
+      margin-top: 40px;
+      color: #f5564d;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-home:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 550px) {
+      .contact-page {
+        padding: 60px 16px 80px;
+      }
+
+      .contact-page h1 {
+        font-size: 34px;
+      }
+
+      .contact-intro {
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+
+      .contact-card {
+        padding: 25px 20px;
+      }
+    }
   </style>
 </head>
 
@@ -93,13 +173,74 @@
       <h2>Contactez BénéVente</h2>
 
       <p>
-        Pour toute demande d'information, d'assistance ou question
-        concernant BénéVente, vous pouvez nous contacter par e-mail.
+        Une question, besoin d'aide ou envie d'en savoir plus ?
+        Envoyez-nous un message, nous vous répondrons dès que possible.
       </p>
 
-    <a class="contact-email" href="mailto:contact@benevente.fr">
-      Nous contacter
-    </a>
+      <form action="https://formspree.io/f/mrpepbzw" method="POST" class="contact-form">
+
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="organization">Association / organisation <span style="font-weight:400;color:#667085;">(facultatif)</span></label>
+          <input
+            type="text"
+            id="organization"
+            name="organization"
+            autocomplete="organization"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse e-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Objet</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <p class="contact-privacy">
+          🔒 Les informations transmises via ce formulaire sont utilisées
+          uniquement pour répondre à votre demande.
+        </p>
+
+        <button type="submit" class="contact-submit">
+          Envoyer le message
+        </button>
+
+      </form>
 
     </div>
 
