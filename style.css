@@ -833,3 +833,35 @@ details p {
         gap: 8px;
     }
 }
+
+/* Démo téléphone — interface bénévole */
+
+.demo-status {
+    margin-top: 14px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #7b8794;
+}
+
+.demo-access {
+    background: #e8f7ee;
+    color: #23864a;
+    padding: 10px 11px;
+    border-radius: 8px;
+    font-size: 11px;
+    margin-bottom: 14px;
+}
+
+.demo-section-title {
+    color: #0b304e;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.phone .product small {
+    display: block;
+    margin-top: 5px;
+    color: #8a98a6;
+    font-size: 9px;
+}
