@@ -592,6 +592,58 @@ details p {
     padding-top: 14px;
 }
 
+/* =========================================================
+   CTA FINAL
+   ========================================================= */
+
+.final-cta {
+    background: white;
+    padding: 80px 0;
+}
+
+.final-cta-box {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 65px 40px;
+    text-align: center;
+    background: var(--navy);
+    border-radius: 28px;
+    box-shadow: var(--shadow);
+}
+
+.final-cta-box > span {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--coral);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.final-cta-box h2 {
+    margin: 0 auto 18px;
+    color: white;
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.final-cta-box p {
+    margin: 0 auto 28px;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
+}
+
+.final-cta-button {
+    display: inline-flex;
+    margin-bottom: 18px;
+}
+
+.final-cta-box small {
+    display: block;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 11px;
+}
 
 /* =========================================================
    FOOTER
@@ -660,6 +712,19 @@ footer {
     .price-card.featured {
         transform: none;
     }
+
+   .final-cta {
+    padding: 55px 0;
+   }
+   
+   .final-cta-box {
+       padding: 45px 22px;
+       border-radius: 20px;
+   }
+   
+   .final-cta-box h2 {
+       font-size: 30px;
+   }
 }
 
 
