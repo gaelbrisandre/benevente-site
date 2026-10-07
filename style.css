@@ -129,8 +129,8 @@ nav a:hover {
 
 .button:hover {
     transform: translateY(-2px);
-    background: var(--coral-dark)
-   ;
+    background: var(--coral-dark);
+}
 
 .button-small {
     padding: 10px 17px;
