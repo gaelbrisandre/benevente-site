@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Message envoyé — BénéVente</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .success-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background: #f8fafc;
+    }
+
+    .success-card {
+      width: 100%;
+      max-width: 620px;
+      padding: 55px 45px;
+      background: #ffffff;
+      border: 1px solid #e1e7ee;
+      border-radius: 22px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(11, 48, 78, 0.08);
+    }
+
+    .success-icon {
+      width: 68px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      background: #fff1f0;
+      color: #f5564d;
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+    .success-card h1 {
+      margin-bottom: 16px;
+      color: #0b304e;
+      font-size: 38px;
+      line-height: 1.2;
+    }
+
+    .success-card p {
+      max-width: 480px;
+      margin: 0 auto 30px;
+      color: #64748b;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .success-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 24px;
+      background: #f5564d;
+      color: #ffffff;
+      border-radius: 11px;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(245, 86, 77, 0.20);
+      transition: 0.2s ease;
+    }
+
+    .success-button:hover {
+      background: #df403f;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 550px) {
+      .success-card {
+        padding: 40px 22px;
+      }
+
+      .success-card h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="success-page">
+
+    <div class="success-card">
+
+      <div class="success-icon">✓</div>
+
+      <h1>Message envoyé !</h1>
+
+      <p>
+        Merci pour votre message.<br>
+        Nous vous répondrons dès que possible.
+      </p>
+
+      <a href="index.html" class="success-button">
+        Retour à l'accueil
+      </a>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
