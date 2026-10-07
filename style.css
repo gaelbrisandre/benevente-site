@@ -652,9 +652,10 @@ footer {
     }
 
     .steps,
-    .pricing {
-        grid-template-columns: 1fr;
-    }
+   .pricing,
+   .benefits {
+       grid-template-columns: 1fr;
+   }
 
     .price-card.featured {
         transform: none;
