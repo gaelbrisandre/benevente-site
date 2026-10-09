@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Contact — BénéVente</title>
-<link href="style.css" rel="stylesheet"/>
+<link href="../style.css" rel="stylesheet"/>
 <style>
     .contact-page {
       max-width: 760px;
@@ -173,35 +173,33 @@
 <body>
 <main class="contact-page">
 <p class="section-label">CONTACT</p>
-<h1>Une question ?</h1>
+<h1>Have a question?</h1>
 <p class="contact-intro">
-      Une question sur BénéVente, son fonctionnement ou nos offres ?
-      Nous sommes à votre disposition pour vous répondre.
+      Questions about BénéVente, how it works or our plans? We're here to help.
     </p>
 <div class="contact-card">
-<h2>Contactez BénéVente</h2>
+<h2>Contact BénéVente</h2>
 <p>
-        Une question, besoin d'aide ou envie d'en savoir plus ?
-        Envoyez-nous un message, nous vous répondrons dès que possible.
+        Need help or want to know more? Send us a message and we'll reply as soon as possible.
       </p>
 <form action="https://formspree.io/f/mrpepbzw" class="contact-form" id="contact-form" method="POST">
 <div class="form-group">
-<label for="name">Nom</label>
+<label for="name">Name</label>
 <input autocomplete="name" id="name" name="name" required="" type="text"/>
 </div>
 <div class="form-group">
 <label for="organization">
-            Association / organisation
-            <span style="font-weight:400;color:#667085;">(facultatif)</span>
+            Association / organization
+            <span style="font-weight:400;color:#667085;">(optional)</span>
 </label>
 <input autocomplete="organization" id="organization" name="organization" type="text"/>
 </div>
 <div class="form-group">
-<label for="email">Adresse e-mail</label>
+<label for="email">Email address</label>
 <input autocomplete="email" id="email" name="email" required="" type="email"/>
 </div>
 <div class="form-group">
-<label for="subject">Objet</label>
+<label for="subject">Subject</label>
 <input id="subject" name="subject" required="" type="text"/>
 </div>
 <div class="form-group">
@@ -209,19 +207,18 @@
 <textarea id="message" name="message" required="" rows="6"></textarea>
 </div>
 <p class="contact-privacy">
-          🔒 Les informations transmises via ce formulaire sont utilisées
-          uniquement pour répondre à votre demande.
+          🔒 Information submitted through this form is used only to respond to your request.
         </p>
 <div class="form-error" id="form-error">
-          Une erreur est survenue. Merci de réessayer.
+          An error occurred. Please try again.
         </div>
 <button class="contact-submit" id="submit-button" type="submit">
-          Envoyer le message
+          Send message
         </button>
 </form>
 </div>
 <a class="back-home" href="index.html">
-      ← Retour à l'accueil
+      ← Back to home
     </a>
 </main>
 <script>
@@ -260,5 +257,5 @@
       }
     });
   </script>
-<a class="language-switch" href="en/contact.html">🇬🇧 EN</a></body>
+<a class="language-switch" href="../contact.html">🇫🇷 FR</a></body>
 </html>

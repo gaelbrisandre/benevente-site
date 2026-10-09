@@ -865,3 +865,7 @@ details p {
     color: #8a98a6;
     font-size: 9px;
 }
+
+/* Language selector */
+.language-switch{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:8px 12px;border:1px solid rgba(20,43,73,.22);border-radius:30px;text-decoration:none;font-weight:800;font-size:13px;color:inherit;white-space:nowrap;margin-left:10px}
+.language-switch:hover{background:rgba(60,90,130,.08)}
