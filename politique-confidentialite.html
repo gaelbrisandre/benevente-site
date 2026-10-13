@@ -250,10 +250,10 @@
         <strong>OVHcloud</strong>, pour l'hébergement du site internet benevente.fr ;
       </li>
       <li>
-        <strong>Streamlit Community Cloud</strong>, pour l'hébergement de l'application BénéVente ;
+        <strong>Scaleway</strong>, pour l’hébergement de l’application BénéVente accessible sur app.benevente.fr, sur un serveur situé en Irlande (Union européenne) ;
       </li>
       <li>
-        <strong>Supabase</strong>, pour l'authentification, la base de données et les services associés ;
+        <strong>Supabase</strong>, pour l'authentification, la base de données et les services associés, avec une région d'hébergement configurée en Irlande (Union européenne) ;
       </li>
       <li>
         <strong>Brevo</strong>, pour l’envoi des e-mails transactionnels liés au fonctionnement du service, notamment les messages d’authentification, de sécurisation des comptes et de réinitialisation des mots de passe ;
@@ -344,11 +344,22 @@
     </p>
 
     <p>
-      Les éventuelles copies présentes dans les sauvegardes techniques
-      suivent leurs propres cycles de conservation et de purge, dans le
-      respect des obligations applicables. Pour toute question concernant
-      une suppression ou les données résiduelles, l'utilisateur peut écrire
-      à <strong>contact@benevente.fr</strong>.
+      Des sauvegardes techniques automatiques sont réalisées quotidiennement
+      et stockées sur le serveur de l'application hébergé par Scaleway en
+      Irlande. Leur durée de conservation prévue est de 14 jours, sous
+      réserve de vérification de la configuration effective de rotation.
+      Lorsqu'un compte est supprimé, des copies des données effacées de la
+      base active peuvent donc subsister temporairement dans ces sauvegardes,
+      jusqu'à leur expiration. Ces copies sont destinées à la restauration
+      technique du service en cas d'incident et ne sont pas utilisées pour
+      réactiver un compte supprimé. En cas de restauration, les demandes
+      d'effacement déjà exécutées doivent être prises en compte.
+    </p>
+
+    <p>
+      Pour toute question concernant une suppression ou les données
+      résiduelles, l'utilisateur peut écrire à
+      <strong>contact@benevente.fr</strong>.
     </p>
 
     <h2>9. Sécurité</h2>
@@ -389,8 +400,10 @@
     <h2>11. Transferts de données</h2>
 
     <p>
-      Certains prestataires techniques utilisés par BénéVente peuvent
-      traiter des données depuis différents pays.
+      L'application et sa base de données principale sont configurées
+      sur des infrastructures situées en Irlande, au sein de l'Espace
+      économique européen. D'autres prestataires techniques peuvent
+      néanmoins traiter certaines données depuis différents pays.
     </p>
 
     <p>
